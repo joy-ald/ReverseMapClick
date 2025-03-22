@@ -16,7 +16,7 @@ var svg = d3.select("#map").append("svg")
 
 // Load GeoJSON and CSV data using D3
 Promise.all([
-    d3.json("county.geojson"),  // GeoJSON file for county boundaries
+    d3.json("county.json"),  // GeoJSON file for county boundaries
     d3.csv("population_data.csv")         // CSV file with population breakdowns
 ]).then(function([geojson, countyData]) {
 
