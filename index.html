@@ -55,7 +55,7 @@
 
         // Load the GeoJSON file for county boundaries and the CSV data
         Promise.all([
-            d3.json("https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json"),  // GeoJSON file for counties
+            d3.json("county.json"),  // GeoJSON file for counties
             d3.csv("population_data.csv")         // CSV file with county data
         ]).then(function([geojson, countyData]) {
             // GeoJSON counties
